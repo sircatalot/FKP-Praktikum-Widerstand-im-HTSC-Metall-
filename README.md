@@ -1,1 +1,0 @@
-# FKP-Praktikum-Widerstand-im-HTSC-Metall-
