@@ -142,36 +142,42 @@ In our experiment, YBa$_2$Cu$_3$O$_{7-\mathrm{\delta}}$ was used. This material 
 
 
 \chapter{Experimental setup and Procedure}
+
 The setup consists of four main parts \footnote{\url{http://www.physik.uzh.ch/data/peter/FestkoerperPhysik/InfoPraktFestkoerperphysik.shtml}}\\
 \begin{itemize}
 \item The specimen holder.\\
- This is where the superconductor was placed.\\ The container was equipped with connections for the temperature sensor, the heating, the resistance measurement and both current supply and voltage supply.\\
+This is the container where the superconductor is placed. There are connections for the temperature sensor, the heating foil and for the resistance measurement.\\
 \item The cryostat.\\
-This part serves to regulate the temperature. The sample is enclosed in a tube, which is submerged in liquid nitrogen. To keep the sample at a chosen temperature, a heating foil is attached behind it. The foil will heat the sample, as more current is applied to it. This heating foil is needed, as liquid nitrogen has a constant temperature of around 77K at atmospheric pressure. \\
+This part serves as a temperature regulator. The sample is enclosed in a tube, which is submerged in liquid nitrogen. To keep the sample at a certain temperature, a heating foil is attached behind the sample. This heating foil is needed, as liquid nitrogen has a constant temperature of around 77K at atmospheric pressure. \\
 \item The vacuum system.\\
-A vacuum of $2.8 \cdot 10^{-3}$mbar was created inside the tube. This vacuum helps to reduce the heat transfer between the probe and its surroundings, as heat is primarily exchanged through convection. With increasing vacuum, less convection can occur, as less air is inside the tube. 
+A vacuum of $2.8 \cdot 10^{-3}$mbar was created inside the tube. This vacuum helps to reduce the heat transfer between the probe and its surroundings, as heat is primarily exchanged through convection.\\ 
 \item The electromagnet.\\
-The tip of the tube with the sample, including the cooling, was placed inside an electromagnet. The dependence of the resistance for different static magnetic fields could thus be measured.
+The tube with the sample is placed inside an electromagnet. Therefore the experiment can be repeated with different magnetic fields up to a field of 0.8T . 
+
 \end{itemize}
 
-~\\
-  
-Before measuring the resistance of our superconductor, the sample was cooled down to around 82K. The cooling (as well as the heating) was then cut out and the resistance was measured. The sample's temperature then increased slowly, as the surrounding room temperature was much higher. Thanks to the isolation created by the vacuum however, this temperature change was very slow and the system practically remained in a thermal equilibrium. This allowed for a precise measurement of the transition temperature $T_c$.\\
-\newpage
-To get the best possible measurement for the resistance, we used the so called four point measuring. The current supply is independent of the voltage metering. This allows for an undisturbed measuring of the voltage. 
+\section*{Procedure}
 
+The first step in the measuring process is the cooling. The sample and the apparatus are cooled by liquid nitrogen which gets pumped into the system. With the heating foil and the PID-controller a arbitrary temperature within the apparatus working range can be achieved. In the experiment the starting temperature was set to 82K. When this temperature was reached and stabilized the heating and cooling got turned off and the experiment started. While the samples temperature slowly increased due to the temperature difference to the room temperature, we measured the resistivity. 
+Since the sample is in a vacuum, the rise in temperature happens very slowly and we can assume the sample to be in thermal equilibrium. 
+
+The resistivity measurement got realised in a four point measuring circuit. This setup is usually used when a resistance has to be measured precisely. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=7cm]{vierpunkt.png}
-\caption{Illustration of the four-point measuring technique}
+\includegraphics[width=6cm]{vierpunkt.png}
+\caption{The four-point measuring technique}
+\label{vierpunkt}
 \end{figure}
 
 
+Another measuring technique got used which at first glance may seem rather unusual. The direction of the current got reversed after each measurement. We can think of this as running the current in figure \ref{vierpunkt} first in clockwise direction and than in counterclockwise.
+
+The reason behind this procedure are the contact potentials (also known as \emph{Volta potential}) of the plugs. Every connection between two different metals leads to such a potential and therefore creates a systematic error. To reduce this systematic error we computed the final resistivity as the mean between the clockwise-resistance and the counterclockwise-resistance.  
 
 
 \chapter{Results}
-Hier kommen resultate
+
 \begin{framed}
 \begin{table}[H]
 \centering
