@@ -159,7 +159,7 @@ The tube with the sample is placed inside an electromagnet. Therefore the experi
 
 \section*{Procedure}
 
-The first step in the measuring process is the cooling. The sample and the apparatus are cooled by liquid nitrogen which gets pumped into the system. With the heating foil and the PID-controller an arbitrary temperature within the apparatus working range can be achieved. In the experiment the starting temperature was set to 82K. When this temperature was reached and stabilized the heating and cooling got turned off and the experiment started. While the samples temperature slowly increased due to the temperature difference to the room temperature, the resistance was measured. 
+The first step in the measuring process is the cooling. The sample and the apparatus are cooled by liquid nitrogen which gets pumped into the system. With the heating foil and the PID-controller, an arbitrary temperature within the apparatus working range can be achieved. In the experiment, the starting temperature was set to 82K. When this temperature was reached and stabilized, the heating and cooling got turned off and the experiment started. While the samples temperature slowly increased due to the temperature difference to the room temperature, the resistance was measured. 
 Since the sample is in a vacuum, the rise in temperature happens very slowly and we can assume the sample to be in thermal equilibrium. 
 
 The resistivity measurement got realized in a four point measuring circuit. This setup is usually used when a resistance has to be measured precisely. 
@@ -172,7 +172,7 @@ The resistivity measurement got realized in a four point measuring circuit. This
 \end{figure}
 
 
-Another measuring technique got used which at first glance may seem rather unusual. The direction of the current got reversed after each measurement. We can think of this as running the current in figure \ref{vierpunkt} first in clockwise direction and than in counterclockwise.
+Another measuring technique got used which at first glance may seem rather unusual. The direction of the current got reversed after each measurement. We can think of this as running the current in figure \ref{vierpunkt} first in clockwise direction and then in counterclockwise direction.
 
 
 \chapter{Results}
@@ -183,7 +183,7 @@ Another measuring technique got used which at first glance may seem rather unusu
 
 \item Does YBa$_2$Cu$_3$O$_{7-\mathrm{\delta}}$  behave like a metal above the transition temperature? Describe the temperature dependence qualitatively.\\
 \\
-In the measured region just above the transition temperature, the resistance increases linearly with respect to the temperature. This corresponds to the expected behaviour of a metal. It can be seen in figure \ref{Res}.
+In the measured region just above the transition temperature, the resistance increases linearly with respect to the temperature. This corresponds to the expected behavior of a metal. It can be seen in figure \ref{Res}.
 
 \begin{figure}[H]
 \centering
@@ -195,27 +195,27 @@ In the measured region just above the transition temperature, the resistance inc
 
 \item What is the expected dependence of the resistance of a metal (no superconductivity) due to an external magnetic field (for small magnetic fields)?\\
 \\
-For small magnetic fields, the resistance of a metal is independent due to an external magnetic field. The reason behind this is the Hall-effect. The magnetic field causes a Lorentz-force, acting on all moving electrons, perpendicular to the magnetic filed and the direction of the electrons velocity. Therefore the electrons concentrate on one side of the metal and an electric field, in the direction of the Lorentz-force appears. This causes a force on the electrons, in the opposite direction. As soon as the equilibrium is reached, where the two forces are equal, the electrons are able to move like if there was no magnetic field. Therefore, the resistance is the same. \\
+For small magnetic fields, the resistance of a metal is independent of an external magnetic field. The reason behind this is the Hall-effect. The magnetic field causes a Lorentz-force, acting on all moving electrons, perpendicular to the magnetic field and the direction of the velocity of the electrons. Therefore the electrons concentrate on one side of the metal and an electric field, in the direction of the Lorentz-force appears. This produces a force on the electrons, in the opposite direction. As soon as the equilibrium is reached, where the two forces are equal, the electrons are able to move like if there was no magnetic field. Therefore, the resistance is the same as without a magnetic field. \\
 This is not the case in the region near the transition temperature $T_c$ and below. It can also be seen in the measured data in figure \ref{Res}.
 
 \hspace{0.1pt}
 
 \item Determine the transition temperature, $T_c$. How do you do this?\\
 \\
-The transition temperature $T_c$ is defined as the temperature, at which the resistance of a superconducting material drops from a finite value to zero. In figure \ref{Res} one can see, that this is the point, where the slope of the resistance curve is maximal. Therefore, the derivative of the resistance curve was calculated numerically. Since the measured data has a lot of noise on top of the underling curve, the so called \emph{five-point-stencil method \footnote{\url{https://en.wikipedia.org/wiki/Five-point_stencil}}} was used to compute the derivative. Otherwise the peak would not be visible.
+The transition temperature $T_c$ is defined as the temperature, at which the resistance of a superconducting material drops from a finite value to zero. In figure \ref{Res} one can see, that this is the point where the slope of the resistance curve is maximal. As the slope corresponds to the derivative, this is what we had to calculate.  The problem however, was that the resistance curve wasn't a perfect step function and other functions didn't fit either. Therefore, the derivative of the resistance curve was calculated numerically. Since the measured data has a lot of noise on top of the underling curve, the so called \emph{five-point-stencil method \footnote{\url{https://en.wikipedia.org/wiki/Five-point_stencil}}} was used to compute the derivative. Otherwise the peak would not be visible.
 
-The \emph{five-point-stencil method} takes not only the next data points into account but also the 4 surrounding values. With this method we get a more smooth and useful curve. 
+The \emph{five-point-stencil method} takes not only the next data points into account, but 4 surrounding values. With this method we get a more smooth and useful curve. 
 
 \begin{align*}
 f'(x) \approx \frac{-f(x+2 h)+8 f(x+h)-8 f(x-h)+f(x-2h)}{12 h}
 \end{align*}
 
-In figure \ref{h1} the result of this method with $h = 1$ can be seen. This is still not good enough to find $T_c$. The five-point-stencil method with $h = 10$ gives a clearer indication to where the jump in resistance is located. This is due to the fact that by taking larger steps (making $h$ bigger), the noise has less impact. Even though successive measures oscillate quite a lot, the general behaviour of the measurements can be seen clearly in figure \ref{meanresist}. A larger step size will on average suppress the fluctuations.
+In figure \ref{h1}, the result of this method with $h = 1$ can be seen. This is still not good enough to find $T_c$. The five-point-stencil method with $h = 10$ gives a clearer indication to where the jump in resistance is located. This is due to the fact that by taking larger steps (making $h$ bigger), the noise has less of an impact. Even though successive measurements oscillate quite a lot, the general behaviour of the data points can be seen clearly in figure \ref{meanresist}. A larger step size will on average suppress the fluctuations.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.1]{Criticaltemperature3}
-\caption[]{Derivative calculated the direct neighbours (h=1).  }
+\caption[]{Derivative calculated with the direct neighbours (h=1).  }
 \label{h1}
 \end{figure}
 \begin{figure}[H]
@@ -246,7 +246,7 @@ $T_{c} [K]$ & 94.3 $\pm$ 0.4 & 94.0 $\pm$ 0.4 & 94.1 $\pm$ 0.5 \\
 
 \item Why is the resistance measurement carried out twice with a reversion of the polarity?\\
 \\
-The reason behind this procedure are the contact potentials (also known as \emph{Volta potential}) of the plugs. Due to the different Fermi-energies in the different metals, in the region near the connection, some electrons move from the material with higher Fermi-energy to the other one. Thus every connection between two different metals creates a potential, with a fixed direction.  This leads to a systematic error, which shifts all measured voltages (positive and negative) to the same direction. So the voltage was measured, and the resistance calculated in both directions. Finally the mean value of the two resistances was taken to reduce the systematic error. The result of this procedure can be seen in figure \ref{widerstand07T}.
+The reason behind this procedure are the contact potentials (also known as \emph{Volta potential}) of the plugs. Due to the different Fermi-energies in the different metals, in the region near the connection, some electrons move from the material with a higher Fermi-energy to the other one. Thus every connection between two different metals creates a potential, with a fixed direction.  This leads to a systematic error, which shifts all measured voltages (positive and negative) in the same direction. So the voltage was measured, and the resistance calculated in both directions. Finally, the mean value of the two resistances was taken to reduce this systematic error. The result of this procedure can be seen in figure \ref{widerstand07T}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.45]{widerstand07T}
@@ -260,21 +260,22 @@ The reason behind this procedure are the contact potentials (also known as \emph
 
 \section{Transition temperature}
 
-Since the measurement more or less looks like a step-function one can get the error of $T_{c}$ by looking at the width of the derivative-curve. In an ideal case the derivative of a step-function would give a $\delta$-function which is localised in one point. In our case the data was fitted with a non normalized Gaussian distribution:
+Since the measurement more or less looks like a step-function one can get the error of $T_{c}$ by looking at the width of the derivative-curve. In an ideal case the derivative of a step-function would give a $\delta$-function which is localised in one point. In our case, the data was fitted with a non-normalized Gaussian distribution:
 \begin{align*}
 f(x)= a \cdot e^{\frac{1}{2} \cdot \frac{(x-\mu)^2}{\sigma^2}}
 \end{align*} 
 The error (width of the peak), is then directly given by the parameter $\sigma$. It is also drawn in figure \ref{meanresist}.
 
 \chapter{Discussion}
-The measured resistance curves look quite reasonable, especially for temperatures above $T_c$. Nevertheless there are some unexpected parts in the curves:
+The measured resistance curves look quite reasonable, especially for temperatures above $T_c$. Nevertheless, there are some unexpected parts in the curves:
 \begin{itemize}
 \item Transition temperature $T_c$: \\
 The literature value of the transition temperature is $92 \mathrm{K}$. This is quite near to the measured value of $(94.3 \pm 0.4) \mathrm{K}$, but it is not in the error range. There could be different reasons for this. Maybe the measured temperature was a little bit off the real temperature inside the probe. \\
+It could also be that the literature value for the superconductor had a different composition than the one we used, as the $\delta$ in YBa$_2$Cu$_3$O$_{7-\mathrm{\delta}}$ stands for an unpredictable quantity, which can change this temperature. 92K would then be more of a guide temperature than an actual temperature for our specific sample.\\
 Another unexpected observation is, that the transition temperature goes down if a magnetic field of $0.42 \mathrm{T}$ is applied, but goes up again a little bit if the magnetic field is raised to $0.7 \mathrm{T}$. The expectation was that $T_c$ would become lower, the larger the magnetic field is. \\
 \item Below transition temperature: \\
-Below $T_c$ in theory the resistance should drop to zero. In our measurements the resistance goes even down to values below zero, which makes no sense. But since it is very hard to measure such small resistances that precisely, and it is even impossible to measure zero resistance, it is not unexpected, that some errors appear in this region. 
-
+In theory, below $T_c$ the resistance should drop to zero. In our measurements, the resistance goes even down to values below zero, which makes no sense. But since it is very hard to measure such small resistances that precisely, and it is even impossible to measure zero resistance, it is not unexpected, that some errors appear in this region. 
+\end{itemize}
 
 
 \end{document}
